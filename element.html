@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="element">
+        <div class="header">
+        <span><label id="lbl-dataTime" >date</label></span>
+        <span> <label id="lbl-invoice-details" >Preview Invoice- INV001 -DAANI INTERNATIONAL</label></span>
+        </div>
+        <hr id="header-break">
+        <div class="first-container">
+            <div class="companyLogo">
+                   <img src="logo.jpg" alt="companylogo">
+            </div>
+           
+            <div class="companyDetails">
+                <label id="lbl-companyName" ><h2>Daani International</h2></label><br>
+                <label id="lbl-companyAddress">ABC STREET , KARACHI</label><br>
+                <label id="lbl-companyCity">Karachi</label><br>
+                <label id="lbl-companyPhone">0213-4591786</label><br>
+                <label id="lbl-Email">dastoor@gmail.com</label>
+            </div>
+            <div class="invoiceDetails">
+                 <h6>INVOICE NUMBER</h6>
+                 <label id="lbl-invoiceNo">12345</label>
+                 <h6>DATE</h6>
+                 <label id="lbl-invoiceDate">date</label>
+                 <h6>DUE</h6>
+                <label id="lbl-invoiceDue">on Receipts</label>
+                <h6>BALANCE DUE</h6>
+                <label id="lbl-invoiceDue">Rs.0.00</label>
+
+            </div>
+        </div>
+        <div class="second-container">
+            <div class="customerDetails">
+                <label  ><h2>Bill To</h2></label>
+                <label id="lbl-customerName" ><h3>Dastoor by Darul Arqam</h3></label>
+                <label id="lbl-customerEmail">dastoor@gmail.com</label><br>
+                <label id="lbl-customerAddress">ABC STREET , KARACHI</label><br>
+                <label id="lbl-customerPhone">0213-4591786</label><br>
+               
+            </div>
+        </div>
+        <div class="third-container">
+            <table>
+              <tr><th>Description</th>
+                <th>Rate</th>
+                <th>Quantity</th>
+                <th>Amount</th></tr>
+                <tr><td>Jewelley Set</td>
+                    <td>Rs.20</td>
+                    <td>5</td>
+                    <td>Rs.100</td></tr>    
+                </table>
+        </div>
+        <div class="fourth-container">
+            <div class="labels">
+               <strong><label> SUBTOTAL</label></strong> <br>
+                 <strong><label> GST</label></strong><br>
+                 <strong><label> TOTAL</label></strong><br>
+                <hr>
+                 <strong><label> BALANCE DUE</label></strong><br>
+                <hr>
+            </div>
+            <div class="values">
+                <label> Rs.0.00</label><br>
+                <label> Rs.0.00</label><br>
+                <label> Rs.0.00</label><br>
+                <hr>
+                <label> Rs.0.00</label><br>
+                <hr>
+
+            </div>
+        </div>
+        
+    </div>
+    <!-- <input type="button" value="Generate PDF" id="btn"> -->
+
+
+       
+    <!-- <script>
+        var btn=document.querySelector('#btn');
+        var element =document.querySelector('.element');
+    
+        btn.addEventListener('click',function(e)
+        {
+            var element =document.querySelector('.element');
+            html2pdf(element,{
+                // margin:1,
+                margin: [0.2, 0.4],
+                filename:'sample.pdf',
+                html2canvas:{scale:0},
+                jsPDF:{ unit: 'in', format: 'letter', orientation: 'landscape' }
+            });
+        })
+
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js "> </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

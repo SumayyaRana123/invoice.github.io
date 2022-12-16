@@ -1,0 +1,156 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.from-container{
+    /* border: 3px solid red; */
+    width:45%;
+    margin:10px 40px;
+
+}
+.from-container > label{
+    margin: 12px auto;
+    padding: 2px;
+}
+.from-container > input 
+  {
+     margin: 10px 5px;
+      padding: 10px;
+      border-radius: 5px;
+      width: 60%;
+    
+  }
+  .from-container >select{
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+  }
+.to-container{
+    /* border: 3px solid red; */
+    width: 50%;
+    margin: 10px auto
+
+}
+
+.to-container > label  {
+    /* background-color: #9ba2a3; */
+    margin: 12px auto;
+    padding: 2px;
+  }
+
+  .to-container > input 
+  {
+     margin: 10px 5px;
+      padding: 10px;
+      border-radius: 5px;
+      width: 60%;
+    
+  }
+
+.to-container-left 
+{
+    border:1px solid red;
+    font:12px;
+    font-style: oblique;
+
+}
+.to-container-right
+{
+    display: grid;
+    row-gap: 1px;
+
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.left-header{
+    width: 45%;
+    margin:10px 40px;
+    border: 1px solid grey;
+    text-align: left;
+    height: 50px;
+}
+.right-header{
+   
+    width: 20%;
+    border: 1px solid grey;
+    text-align: center;
+    align-self: left;
+    margin: 10px auto;
+    height: 100px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+}
+.right-header input{
+    margin-top: 20px;
+}
+
+.invoice-header{
+    width: 100%;
+    display: inline-grid;
+    column-gap: 3.5%;
+    grid-template-columns: 5% 30% 10% 10% 10% 10% 5%;
+}
+.invoice-item-container{
+    /* border: 1px solid green; */
+    border-top:  2px solid grey;
+    border-bottom: 2px solid grey;
+
+}
+.invoice-items{
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 5% 30% 10% 10% 10% 10% 5%;
+    column-gap: 3.5%;
+}
+
+
+#item-description,#item-details, #rate ,#quantity , #amount,#tax{
+    width:100%;
+
+}
+#hrAfterItems{
+    border-top: 1px dashed grey;
+}
+#totalContainer{
+   
+    width: 100%;;
+    border:3px solid green;
+}
+.totalContainer-items{
+    width:95%;
+    
+    right:20px;
+    text-align: right;
+}
+#lbl-image{
+    margin-top: 30%;
+
+}
+#image-bnt-container{
+border:1px solig red;
+ margin-top: 12%;
+}
+.generatePDF{
+    width: 100%;
+}
+.generatePDF input[ type="button" ]{
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: rgb(66, 66, 75);
+    width: 20%;
+    color: aliceblue;
+    position: absolute;
+   left:40%;
+    margin-top: 20px;
+    padding: 10px;
+
+}
